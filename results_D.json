@@ -1,0 +1,123 @@
+{
+ "kind": "placement-results",
+ "version": 1,
+ "mode": "D",
+ "lang": "csharp",
+ "created": "2026-11-17T17:15:46",
+ "created_epoch": 1794928546984,
+ "at": null,
+ "build": {
+  "ok": true,
+  "output": "Build succeeded.\n    1 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:01.84",
+  "ms": 2158
+ },
+ "runs": [
+  {
+   "file": "check2.txt",
+   "exit": 0,
+   "timed_out": false,
+   "ms": 129,
+   "stdout": "FINES\r\nreader_id,name,fine\r\n201,הניה ברק,40\r\n202,צפורה לנדאו,8\r\n214,זלדה פרי,8\r\n203,גליה שפירא,6\r\n204,דליה כהנא,25\r\n205,יוכבד ליבר,3\r\n206,תמר אלון,2\r\n207,שולמית רז,0\r\n208,רות בן דוד,1\r\n209,ברכה טל,2\r\n210,טליה נוי,15\r\n211,פזית הורוביץ,0\r\n212,נאוה שגיא,0\r\n213,חיה מור,6\r\n217,מרים אשכנזי,4\r\n218,אילנה צור,4\r\nFLAGGED\r\nreader_id,name\r\n211,פזית הורוביץ\r\n212,נאוה שגיא\r\nERRORS\r\nTOTAL,124\r\nTOP_BOOKS\r\nbook,count\r\nאיסתרק,5\r\nקיצור שולחן ערוך,5\r\nעולם חירש,4\r\nAT_RISK\r\nreader_id,name\r\n",
+   "stderr_tail": "",
+   "decode_problem": false
+  }
+ ],
+ "sample_run": {
+  "file": "sample.txt",
+  "exit": 0,
+  "timed_out": false,
+  "ms": 125,
+  "stdout": "FINES\r\nreader_id,name,fine\r\n11,רחל כהן,2\r\n12,מרים לוי,40\r\n21,שרה גולד,0\r\n31,לאה רוזן,10\r\nFLAGGED\r\nreader_id,name\r\n21,שרה גולד\r\nERRORS\r\n13,דינה אבן,student,קיצור שולחן ערוך,50,45\r\nTOTAL,52\r\nTOP_BOOKS\r\nbook,count\r\nעולם חירש,2\r\nאיסתרק,1\r\nלהשאר יהודי,1\r\nAT_RISK\r\nreader_id,name\r\n",
+  "stderr_tail": "",
+  "decode_problem": false
+ },
+ "warnings": [],
+ "files": [
+  {
+   "path": "app/Loan.cs",
+   "lines": 140,
+   "classes": [
+    "type",
+    "Loan"
+   ],
+   "functions": [
+    {
+     "name": "Loan",
+     "lines": 9
+    },
+    {
+     "name": "CurectData",
+     "lines": 21
+    },
+    {
+     "name": "TryCalculateLoan",
+     "lines": 36
+    },
+    {
+     "name": "CalculateBuilds",
+     "lines": 44
+    }
+   ],
+   "type_ifs": 4
+  },
+  {
+   "path": "app/Program.cs",
+   "lines": 59,
+   "classes": [
+    "Program"
+   ],
+   "functions": [
+    {
+     "name": "Main",
+     "lines": 12
+    },
+    {
+     "name": "ReadReportDay",
+     "lines": 4
+    },
+    {
+     "name": "ReadRows",
+     "lines": 14
+    },
+    {
+     "name": "FindSample",
+     "lines": 11
+    }
+   ],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/ReportOfMoney.cs",
+   "lines": 93,
+   "classes": [
+    "ReportOfMoney"
+   ],
+   "functions": [
+    {
+     "name": "ReportOfMoney",
+     "lines": 1
+    },
+    {
+     "name": "CreateReport",
+     "lines": 7
+    },
+    {
+     "name": "CreateReport",
+     "lines": 65
+    },
+    {
+     "name": "FormatMoney",
+     "lines": 4
+    }
+   ],
+   "type_ifs": 0
+  }
+ ],
+ "git": {
+  "available": true,
+  "commit": "24b62bb",
+  "note": "saved your work in a commit: \"after change\"",
+  "log": "5b514c9|2026-11-17 13:37:31 +0200|start\ne122643|2026-11-17 16:13:19 +0200|Update project files\n42237b9|2026-11-17 17:01:43 +0200|Complete loan report levels 1-4\n57c3518|2026-11-17 17:12:51 +0200|change 1\n8de49b2|2026-11-17 17:13:33 +0200|change 2\n24b62bb|2026-11-17 17:15:46 +0200|after change",
+  "numstat": "commit|5b514c9|start\n\n7\t0\t.gitignore\n55\t0\tapp/Program.cs\n11\t0\tapp/app.csproj\n449\t0\tcheck/run_checks.py\n8\t0\tdata/sample.txt\ncommit|e122643|Update project files\n\n86\t0\tapp/Loan.cs\n10\t0\tapp/ReportOfMoney.cs\ncommit|42237b9|Complete loan report levels 1-4\n\n4\t0\t.github/copilot-instructions.md\n85\t36\tapp/Loan.cs\n9\t5\tapp/Program.cs\n84\t1\tapp/ReportOfMoney.cs\n12\t0\tdata/dirty.txt\ncommit|57c3518|change 1\n\n1\t1\tapp/Loan.cs\n132\t0\tresults_C.json\ncommit|8de49b2|change 2\n\n7\t2\tapp/Loan.cs\ncommit|24b62bb|after change\n\n132\t0\tresults_C.171519.json\n15\t15\tresults_C.json"
+ }
+}

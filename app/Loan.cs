@@ -8,7 +8,7 @@ namespace App
     {
         Teacher,
         Student,
-        Guess
+        Alumna
     }
     internal class Loan
     {
@@ -51,7 +51,7 @@ namespace App
                 return false;
 
             string userType = data[2].Trim().ToLowerInvariant();
-            return userType == "student" || userType == "teacher" || userType == "guest";
+            return userType == "student" || userType == "teacher" || userType == "guest" || userType == "alumna";
         }
 
         public bool TryCalculateLoan(string[] data, int reportDay, out decimal fine, out bool flagged)
@@ -77,6 +77,11 @@ namespace App
             {
                 int chargeableDays = Math.Max(0, loanDays - 7);
                 fine = decimal.Ceiling(chargeableDays * 2.5m);
+            }
+            else if (userType == "alumna")
+            {
+                int chargeableDays = Math.Max(0, loanDays - 10);
+                fine = decimal.Ceiling(Math.Min(25m, chargeableDays * 1.5m));
             }
             else if (!returned && loanDays > 60)
             {

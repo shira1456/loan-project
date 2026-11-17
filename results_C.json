@@ -3,21 +3,21 @@
  "version": 1,
  "mode": "C",
  "lang": "csharp",
- "created": "2026-11-17T17:09:58",
- "created_epoch": 1794928198291,
+ "created": "2026-11-17T17:15:16",
+ "created_epoch": 1794928516501,
  "at": null,
  "build": {
   "ok": true,
-  "output": "Build succeeded.\n    1 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:03.80",
-  "ms": 4118
+  "output": "Build succeeded.\n    1 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:02.04",
+  "ms": 2346
  },
  "runs": [
   {
    "file": "check1a.txt",
    "exit": 0,
    "timed_out": false,
-   "ms": 143,
-   "stdout": "FINES\r\nreader_id,name,fine\r\n101,צביה לוין,6\r\n102,תהילה כץ,0\r\n107,יעל אדלר,10\r\n103,שירה גבאי,1\r\n104,דינה שטרן,2\r\n112,בינה קליין,8\r\n105,הדסה וולף,30\r\n113,זהבה אורן,60\r\n106,חנה רוזן,6\r\n121,גאולה חדד,18\r\n108,טובה מזרחי,103\r\n109,רבקה פישר,0\r\n110,פנינה עזרא,0\r\n111,נחמה ברגר,0\r\n114,מיכל דהן,4\r\n115,אורית שמש,4\r\nFLAGGED\r\nreader_id,name\r\n109,רבקה פישר\r\n110,פנינה עזרא\r\nERRORS\r\nTOTAL,252\r\nTOP_BOOKS\r\nbook,count\r\nאיסתרק,8\r\nקיצור שולחן ערוך,6\r\nעולם חירש,4\r\nAT_RISK\r\nreader_id,name\r\n121,גאולה חדד\r\n",
+   "ms": 140,
+   "stdout": "FINES\r\nreader_id,name,fine\r\n101,צביה לוין,6\r\n102,תהילה כץ,0\r\n107,יעל אדלר,10\r\n103,שירה גבאי,1\r\n104,דינה שטרן,2\r\n112,בינה קליין,8\r\n105,הדסה וולף,40\r\n113,זהבה אורן,80\r\n106,חנה רוזן,6\r\n121,גאולה חדד,18\r\n108,טובה מזרחי,103\r\n109,רבקה פישר,0\r\n110,פנינה עזרא,0\r\n111,נחמה ברגר,0\r\n114,מיכל דהן,4\r\n115,אורית שמש,4\r\nFLAGGED\r\nreader_id,name\r\n109,רבקה פישר\r\n110,פנינה עזרא\r\nERRORS\r\nTOTAL,282\r\nTOP_BOOKS\r\nbook,count\r\nאיסתרק,8\r\nקיצור שולחן ערוך,6\r\nעולם חירש,4\r\nAT_RISK\r\nreader_id,name\r\n121,גאולה חדד\r\n",
    "stderr_tail": "",
    "decode_problem": false
   },
@@ -25,7 +25,7 @@
    "file": "check1b.txt",
    "exit": 0,
    "timed_out": false,
-   "ms": 125,
+   "ms": 126,
    "stdout": "FINES\r\nreader_id,name,fine\r\n131,לאה גולן,3\r\n132,עדי פרלמן,8\r\n136,שפרה ליפשיץ,0\r\n137,אסתר כרמי,0\r\nFLAGGED\r\nreader_id,name\r\nERRORS\r\n133,מלכה נחום,student,איסתרק,80,70\r\n134,נעמי סגל,student,עולם חירש,40\r\n135,ענבל פרץ,staff,להשאר יהודי,30,40\r\nTOTAL,11\r\nTOP_BOOKS\r\nbook,count\r\nאיסתרק,1\r\nלהשאר יהודי,1\r\nעולם חירש,1\r\nAT_RISK\r\nreader_id,name\r\n",
    "stderr_tail": "",
    "decode_problem": false
@@ -35,8 +35,8 @@
   "file": "sample.txt",
   "exit": 0,
   "timed_out": false,
-  "ms": 125,
-  "stdout": "FINES\r\nreader_id,name,fine\r\n11,רחל כהן,2\r\n12,מרים לוי,30\r\n21,שרה גולד,0\r\n31,לאה רוזן,10\r\nFLAGGED\r\nreader_id,name\r\n21,שרה גולד\r\nERRORS\r\n13,דינה אבן,student,קיצור שולחן ערוך,50,45\r\nTOTAL,42\r\nTOP_BOOKS\r\nbook,count\r\nעולם חירש,2\r\nאיסתרק,1\r\nלהשאר יהודי,1\r\nAT_RISK\r\nreader_id,name\r\n",
+  "ms": 130,
+  "stdout": "FINES\r\nreader_id,name,fine\r\n11,רחל כהן,2\r\n12,מרים לוי,40\r\n21,שרה גולד,0\r\n31,לאה רוזן,10\r\nFLAGGED\r\nreader_id,name\r\n21,שרה גולד\r\nERRORS\r\n13,דינה אבן,student,קיצור שולחן ערוך,50,45\r\nTOTAL,52\r\nTOP_BOOKS\r\nbook,count\r\nעולם חירש,2\r\nאיסתרק,1\r\nלהשאר יהודי,1\r\nAT_RISK\r\nreader_id,name\r\n",
   "stderr_tail": "",
   "decode_problem": false
  },
@@ -44,7 +44,7 @@
  "files": [
   {
    "path": "app/Loan.cs",
-   "lines": 135,
+   "lines": 140,
    "classes": [
     "type",
     "Loan"
@@ -60,14 +60,14 @@
     },
     {
      "name": "TryCalculateLoan",
-     "lines": 31
+     "lines": 36
     },
     {
      "name": "CalculateBuilds",
      "lines": 44
     }
    ],
-   "type_ifs": 3
+   "type_ifs": 4
   },
   {
    "path": "app/Program.cs",
@@ -124,9 +124,9 @@
  ],
  "git": {
   "available": true,
-  "commit": "42237b9",
+  "commit": "8de49b2",
   "note": "nothing new to commit",
-  "log": "5b514c9|2026-11-17 13:37:31 +0200|start\ne122643|2026-11-17 16:13:19 +0200|Update project files\n42237b9|2026-11-17 17:01:43 +0200|Complete loan report levels 1-4",
-  "numstat": "commit|5b514c9|start\n\n7\t0\t.gitignore\n55\t0\tapp/Program.cs\n11\t0\tapp/app.csproj\n449\t0\tcheck/run_checks.py\n8\t0\tdata/sample.txt\ncommit|e122643|Update project files\n\n86\t0\tapp/Loan.cs\n10\t0\tapp/ReportOfMoney.cs\ncommit|42237b9|Complete loan report levels 1-4\n\n4\t0\t.github/copilot-instructions.md\n85\t36\tapp/Loan.cs\n9\t5\tapp/Program.cs\n84\t1\tapp/ReportOfMoney.cs\n12\t0\tdata/dirty.txt"
+  "log": "5b514c9|2026-11-17 13:37:31 +0200|start\ne122643|2026-11-17 16:13:19 +0200|Update project files\n42237b9|2026-11-17 17:01:43 +0200|Complete loan report levels 1-4\n57c3518|2026-11-17 17:12:51 +0200|change 1\n8de49b2|2026-11-17 17:13:33 +0200|change 2",
+  "numstat": "commit|5b514c9|start\n\n7\t0\t.gitignore\n55\t0\tapp/Program.cs\n11\t0\tapp/app.csproj\n449\t0\tcheck/run_checks.py\n8\t0\tdata/sample.txt\ncommit|e122643|Update project files\n\n86\t0\tapp/Loan.cs\n10\t0\tapp/ReportOfMoney.cs\ncommit|42237b9|Complete loan report levels 1-4\n\n4\t0\t.github/copilot-instructions.md\n85\t36\tapp/Loan.cs\n9\t5\tapp/Program.cs\n84\t1\tapp/ReportOfMoney.cs\n12\t0\tdata/dirty.txt\ncommit|57c3518|change 1\n\n1\t1\tapp/Loan.cs\n132\t0\tresults_C.json\ncommit|8de49b2|change 2\n\n7\t2\tapp/Loan.cs"
  }
 }

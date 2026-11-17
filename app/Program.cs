@@ -1,3 +1,4 @@
+using App;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,10 +16,10 @@ class Program
         string path = args.Length > 0 ? args[0] : FindSample();
         string[] lines = File.ReadAllLines(path, Encoding.UTF8);
         int reportDay = ReadReportDay(lines);
-        List<string[]> rows = ReadRows(lines);
-        Console.Error.WriteLine("skeleton ok: read " + Path.GetFileName(path) + " - report day " + reportDay + " - " + rows.Count + " rows");
-
-        // Write your code here. 'reportDay' and 'rows' are ready.
+        List<string> rawRows;
+        List<string[]> rows = ReadRows(lines, out rawRows);
+        ReportOfMoney report = new ReportOfMoney();
+        report.CreateReport(rows, rawRows, reportDay);
     }
 
     static int ReadReportDay(string[] lines)
@@ -27,15 +28,17 @@ class Program
     }
 
     // The lines after the two first ones, each split into its fields
-    static List<string[]> ReadRows(string[] lines)
+    static List<string[]> ReadRows(string[] lines, out List<string> rawRows)
     {
         List<string[]> rows = new List<string[]>();
+        rawRows = new List<string>();
         for (int i = 2; i < lines.Length; i++)
         {
             if (lines[i].Trim() == "") continue;
             string[] fields = lines[i].Split(',');
             for (int j = 0; j < fields.Length; j++) fields[j] = fields[j].Trim();
             rows.Add(fields);
+            rawRows.Add(lines[i]);
         }
         return rows;
     }
@@ -52,4 +55,5 @@ class Program
         }
         return Path.Combine("data", "sample.txt");
     }
+
 }

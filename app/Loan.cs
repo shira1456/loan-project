@@ -71,7 +71,7 @@ namespace App
             if (userType == "student")
             {
                 int chargeableDays = Math.Max(0, loanDays - 15);
-                fine = Math.Min(30m, chargeableDays);
+                fine = Math.Min(40m, chargeableDays);
             }
             else if (userType == "guest")
             {
